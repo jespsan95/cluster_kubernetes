@@ -51,11 +51,11 @@ spec:
         imagePullPolicy: Always
         resources:
           requests:
+            memory: "1Gi"
+            cpu: "2000m"
+          limits:
             memory: "2Gi"
             cpu: "4000m"
-          limits:
-            memory: "3Gi"
-            cpu: "6000m"
         lifecycle:
           preStop:
             exec:
